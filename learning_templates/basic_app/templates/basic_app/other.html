@@ -1,0 +1,6 @@
+<!DOCTYPE html> {% extends "basic_app/base.html" %} {%block body_block%}
+<h1>Welcome to other</h1>
+<h2>{{ data|title }}</h2>
+<h2>{{ data2 }}</h2>
+<p>{% if user.is_authenticated %}Hello, {{ user.username }}.{% endif %}</p>
+{% endblock %}
